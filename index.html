@@ -11,6 +11,7 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/55bfb9dcc6.js" crossorigin="anonymous"></script>
     <!-- google font -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -23,40 +24,39 @@
 </head>
 
 <body class="font-lato">
-    <header class="md:container mx-auto">
-        <div class="navbar max-w-screen-2xl bg-base-100">
-            <div class="flex-1">
-                <img src="./images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-            </div>
-            <div class="flex-none gap-2">
-              <div class="form-control hidden lg:inline">
-                <input type="text" placeholder="Search here"
-                    class="input w-24 md:w-auto rounded-[600px] focus:outline-none" />
-                <a href=""><i class="fa-solid fa-magnifying-glass -translate-x-10" style="color: #1f1f1f;"></i></a>
-              </div>
-              <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                  </div>
+    <header class="w-[330px] lg:w-[1400px] mx-auto mt-10">
+        <div class="navbar bg-[#F85559] rounded-[600px]">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
-                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
+                <div class="dropdown dropdown-bottom dropdown-end">
+                    <ul tabindex="0" class="dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About US</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                      </ul>
+                </div>
               </div>
+            </div>
+            <div class="navbar-center">
+                <img src="./images/logo.png" alt="">
+              <a class="btn btn-ghost font-bold text-white text-xl">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+                <div class="form-control hidden lg:inline">
+                    <input type="text" placeholder="Search here"
+                        class="input w-24 md:w-auto rounded-[600px] focus:outline-none" />
+                    <a href=""><i class="fa-solid fa-magnifying-glass -translate-x-10" style="color: #1f1f1f;"></i></a>
+                </div>
             </div>
           </div>
     </header>
     <main class="md:container md:mx-auto px-5 md:px-10">
         <!-- carousel starts -->
-        <div class="carousel items-center">
+        <div class="carousel w-[400px] lg:w-[1440px] items-center">
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="hero ml-10 mr-10 mt-10"
                     style="background-image: url('./images/banner1.png');">
@@ -393,7 +393,7 @@
                             <p class="mb-5 w-[300px] lg:w-[615px] text-white">Contrary to popular belief, is not simply
                                 random text. It has roots in a piece of classical Latin literature from 45 BC, making it
                                 over 2000 years old.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-32 mt-5">
+                            <div class="w-[330px] lg:w-[1000px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-around gap-7 lg:gap-32 mt-5">
                                 <div class="card">
                                     <figure class="px-10 pt-10">
                                         <img src="./images/member1.png" alt="" class="rounded-xl w-[140px]" />
